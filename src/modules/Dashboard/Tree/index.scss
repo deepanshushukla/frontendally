@@ -2,6 +2,16 @@
   position: relative;
 
   & .tree-container {
+    //position: relative;
+    &:after{
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 25px;
+      border-left: 7px solid white;
+      left: 14px;
+      bottom: -1px;
+    }
    &.nested {
      & li:nth-child(even){
        background: #ffffff;

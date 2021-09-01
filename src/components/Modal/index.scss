@@ -14,19 +14,27 @@
     width: 30vw;
     height: auto;
     background-color: #fff;
-    padding: 2rem;
-    border-radius: 20px;
-    .header {
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    &_header {
       font-size: 18px;
       font-weight: 500;
+      & .close{
+        position: absolute;
+        top: 16px;
+        right: 22px;
+      }
     }
     background-color: #ffffff;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 
-    &_content {
-      border-bottom: 1px solid #dddddd;
-      padding: 1rem 0;
+    &_content p {
+      &.header{
+        font-weight: 600;
+      }
+      padding: .3rem 0;
     }
   }
 }
