@@ -1,50 +1,77 @@
 .list-container {
   position: relative;
-}
-.tree-container.nested .something {
-  &:before {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 1px;
-    background: grey;
-    left: -30px;
-    top: 9px;
-  }
-}
-.list-container {
-  & ul.tree-container:first-child li:before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 17px;
-    display: block;
-    width: 0;
-    border-left: 1px solid #777;
-    content: "";
-  }
-  & ul.tree-container li:first-child {
-    padding: 0;
-  }
-  & ul.tree-container li:last-child {
-    padding: 0;
-  }
-  & .user-icon {
-    position: relative;
-    z-index: 2;
-    background: white;
-    &:after {
+
+  & .tree-container {
+   &.nested {
+     & li:nth-child(even){
+       background: #ffffff;
+     }
+     & li:nth-child(odd){
+       background: #eeefee;;
+     }
+     & .user-icon{
+       background: transparent;
+     }
+     & li:first-child{
+       padding-top: 8px;
+     }
+     & li:last-child{
+       padding: 8px 0;
+     }
+     & .something {
+       &:before {
+         position: absolute;
+         content: "";
+         width: 20px;
+         height: 1px;
+         background: grey;
+         left: -30px;
+         top: 9px;
+       }
+     }
+   }
+    &:first-child li:before {
       position: absolute;
-      //content: '';
-      width: 1px;
-      height: 36px;
+      top: 0;
+      bottom: 0;
+      left: 17px;
+      display: block;
+      width: 0;
+      border-left: 1px solid #777;
+      content: "";
+    }
+
+    & li {
+      &:first-child {
+        padding-bottom: 8px;
+        padding-top: 0;
+      }
+      &:last-child {
+        padding: 0;
+      }
+    }
+
+
+
+    & .user-icon {
+      position: relative;
+      z-index: 2;
       background: white;
-      left: 7px;
-      top: -11px;
-      z-index: -2;
+
+      &:after {
+        position: absolute;
+        //content: '';
+        width: 1px;
+        height: 36px;
+        background: white;
+        left: 7px;
+        top: -11px;
+        z-index: -2;
+      }
     }
   }
 }
+
 
 .icon-wrapper {
   left: -10px;
