@@ -1,0 +1,133 @@
+.flex {
+  display: flex;
+}
+.flex1 {
+  flex: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-justify-end {
+  justify-content: flex-end;
+}
+
+.flex-justify-start {
+  justify-content: flex-start;
+}
+
+.flex-justify-space-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.align--baseline {
+  align-items: baseline;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.ovf-y-auto {
+  overflow-y: auto;
+}
+
+.ovf-y-scroll {
+  overflow-y: scroll;
+}
+
+.ovf-y-hide {
+  overflow-y: hidden;
+}
+
+.ovf-x-auto {
+  overflow-x: auto;
+}
+
+.ovf-x-hide {
+  overflow-x: hidden;
+}
+
+.ovf-auto {
+  overflow: auto;
+}
+
+.h-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.v-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hv-center {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.hv-center-abs {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.v-center-abs {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
