@@ -30,3 +30,16 @@ const App = () => {
 };
 
 export default App;
+
+// import PropTypes from 'prop-types';
+// SearchResultsHeader.propTypes = {
+//     currentPage: PropTypes.number,
+//     pageSize: PropTypes.number.isRequired,
+//     totalResults: PropTypes.number.isRequired,
+//     totalCalls: PropTypes.number,
+// };
+//
+// SearchResultsHeader.defaultProps = {
+//     currentPage: 0,
+//     totalCalls: 0,
+// };

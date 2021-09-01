@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from 'prop-types';
+
 import Modal from "../../../components/Modal";
 
 const OkrDetail = ({ toggleModal, selectedNode }) => {
@@ -16,3 +18,8 @@ const OkrDetail = ({ toggleModal, selectedNode }) => {
 };
 
 export default OkrDetail;
+
+OkrDetail.propTypes = {
+    toggleModal: PropTypes.func.isRequired,
+    selectedNode: PropTypes.object.isRequired,
+};

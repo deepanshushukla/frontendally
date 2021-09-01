@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom";
 import "./index.scss";
+import PropTypes from 'prop-types';
 
 const Modal = ({ toggleModal, children }) => {
   return ReactDOM.createPortal(
@@ -15,6 +16,9 @@ const Modal = ({ toggleModal, children }) => {
     </div>,
     document.getElementById("modal")
   );
+};
+Modal.propTypes = {
+  toggleModal: PropTypes.func.isRequired,
 };
 
 export default Modal;

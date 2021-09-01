@@ -1,15 +1,5 @@
 .list-container {
   position: relative;
-  //&:before{
-  //  position: absolute;
-  //  content: '';
-  //  height: 99.4%;
-  //  width: 1px;
-  //  left: 17px;
-  //  top: 40px;
-  //  background: grey;
-  //  z-index: 0;
-  //}
 }
 .tree-container.nested .something {
   &:before {
@@ -61,25 +51,8 @@
 }
 .tree-content li {
   position: relative;
-  //&:after{
-  //  position: absolute;
-  //  content: '';
-  //  width: 20px;
-  //  height: 1px;
-  //  background: grey;
-  //  left: -31px;
-  //  top: 18px;
-  //}
 }
 .tree > .tree-container {
   list-style: none;
   padding: 0;
-}
-
-.d-tree-node {
-  padding: 0.75rem 1.25rem;
-}
-
-.d-tree-toggler.active {
-  transform: rotate(45deg);
 }

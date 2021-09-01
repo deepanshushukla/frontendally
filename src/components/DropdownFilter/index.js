@@ -1,5 +1,6 @@
 import React from "react";
 import {useSelector} from "react-redux";
+import PropTypes from 'prop-types';
 
 const DropdownFilter = ({ changeCategory,categoriesValues }) => {
     const category = useSelector((state) => state.okr.category);
@@ -18,4 +19,9 @@ const DropdownFilter = ({ changeCategory,categoriesValues }) => {
         </select>
     );
 };
+DropdownFilter.propTypes = {
+    changeCategory: PropTypes.func.isRequired,
+    categoriesValues: PropTypes.array.isRequired,
+};
+
 export default DropdownFilter;
